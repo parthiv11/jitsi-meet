@@ -27,7 +27,7 @@ var interfaceConfig = {
     CLOSE_PAGE_GUEST_HINT: false, // A html text to be shown to guests on the close page, false disables it
 
     DEFAULT_BACKGROUND: '#040404',
-    DEFAULT_WELCOME_PAGE_LOGO_URL: 'Connect-AI.png',
+    DEFAULT_WELCOME_PAGE_LOGO_URL: 'images/watermark.svg',
 
     DISABLE_DOMINANT_SPEAKER_INDICATOR: false,
 
@@ -55,7 +55,7 @@ var interfaceConfig = {
      */
     DISABLE_VIDEO_BACKGROUND: false,
 
-    DISPLAY_WELCOME_FOOTER: true,
+    DISPLAY_WELCOME_FOOTER: false,
     DISPLAY_WELCOME_PAGE_ADDITIONAL_CARD: false,
     DISPLAY_WELCOME_PAGE_CONTENT: false,
     DISPLAY_WELCOME_PAGE_TOOLBAR_ADDITIONAL_CONTENT: false,
@@ -71,7 +71,7 @@ var interfaceConfig = {
      */
     HIDE_INVITE_MORE_HEADER: false,
 
-    JITSI_WATERMARK_LINK: '',
+    JITSI_WATERMARK_LINK: 'https://connect-ai.engage-me.co.uk/',
 
     LANG_DETECTION: true, // Allow i18n to detect the system language
     LOCAL_THUMBNAIL_RATIO: 16 / 9, // 16:9
@@ -91,7 +91,7 @@ var interfaceConfig = {
      *
      * @type {boolean}
      */
-    MOBILE_APP_PROMO: true,
+    MOBILE_APP_PROMO: false,
 
     // Names of browsers which should show a warning stating the current browser
     // has a suboptimal experience. Browsers which are not listed as optimal or
@@ -119,12 +119,14 @@ var interfaceConfig = {
     // SHARING_FEATURES: ['email', 'url', 'dial-in', 'embed'],
 
     SHOW_BRAND_WATERMARK: false,
+    SHOW_TRANSCRIPTION_SUBTITLES: true,
 
     /**
      * Decides whether the chrome extension banner should be rendered on the landing page and during the meeting.
      * If this is set to false, the banner will not be rendered at all. If set to true, the check for extension(s)
      * being already installed is done before rendering.
      */
+    // eslint-disable-next-line sort-keys
     SHOW_CHROME_EXTENSION_BANNER: false,
 
     SHOW_JITSI_WATERMARK: true,
@@ -135,7 +137,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: 'https://community.jitsi.org/',
+    SUPPORT_URL: 'https://connect-ai.engage-me.co.uk/',
 
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.
@@ -190,7 +192,7 @@ var interfaceConfig = {
      */
     // APP_SCHEME: 'org.jitsi.meet',
 
-    // NATIVE_APP_NAME: 'Connect AI',
+    // NATIVE_APP_NAME: 'Jitsi Meet',
 
     /**
      * Hide the logo on the deep linking pages.
@@ -219,7 +221,7 @@ var interfaceConfig = {
     // DEFAULT_LOCAL_DISPLAY_NAME: 'me',
 
     // Please use defaultLogoUrl from config.js
-    // DEFAULT_LOGO_URL: 'Connect-AI.png',
+    // DEFAULT_LOGO_URL: 'images/watermark.svg',
 
     // Please use defaultRemoteDisplayName from config.js
     // DEFAULT_REMOTE_DISPLAY_NAME: 'Fellow Jitster',
