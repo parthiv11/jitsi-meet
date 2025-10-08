@@ -298,7 +298,7 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                             ref = { this._setAdditionalContentRef } />
                         : null}
                 </div>
-                {DISPLAY_WELCOME_FOOTER && this._renderFooter()}
+                {/* {DISPLAY_WELCOME_FOOTER && this._renderFooter()} */}
             </div>
 
         );
