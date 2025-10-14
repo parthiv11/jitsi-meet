@@ -5,6 +5,9 @@ body.welcome-page {
 
 .welcome {
     background-image: $welcomePageBackground;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -14,14 +17,11 @@ body.welcome-page {
     position: relative;
 
     .header {
-        background-image: $welcomePageHeaderBackground;
-        background-position: $welcomePageHeaderBackgroundPosition;
-        background-repeat: $welcomePageHeaderBackgroundRepeat;
-        background-size: $welcomePageHeaderBackgroundSize;
         padding: $welcomePageHeaderPadding;
-        background-color: #131519;
+        background-color: transparent;
         overflow: hidden;
         position: relative;
+        min-height: 300px;
 
         .header-container {
             display: $welcomePageHeaderContainerDisplay;

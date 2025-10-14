@@ -203,13 +203,13 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                 <div className = 'header'>
                     <div className = 'header-image' />
                     <div className = 'header-container'>
-                        <div className = 'header-watermark-container'>
+                        {/* <div className = 'header-watermark-container'>
                             <div className = 'welcome-watermark'>
                                 <Watermarks
                                     defaultJitsiLogoURL = { DEFAULT_WELCOME_PAGE_LOGO_URL }
                                     noMargins = { true } />
                             </div>
-                        </div>
+                        </div> */}
                         <div className = 'welcome-page-settings'>
                             <SettingsButton
                                 defaultTab = { SETTINGS_TABS.CALENDAR }
@@ -221,13 +221,13 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                                 : null
                             }
                         </div>
-                        <h1 className = 'header-text-title'>
+                        {/* <h1 className = 'header-text-title'>
                             {t('welcomepage.headerTitle')}
                         </h1>
                         <span className = 'header-text-subtitle'>
                             {t('welcomepage.headerSubtitle')}
-                        </span>
-                        <div id = 'enter_room'>
+                        </span> */}
+                        {/* <div id = 'enter_room'>
                             <div className = 'join-meeting-container'>
                                 <div className = 'enter-room-input-container'>
                                     <form onSubmit = { this._onFormSubmit }>
@@ -257,7 +257,7 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                                     {t('welcomepage.startMeeting')}
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
                         {this._titleHasNotAllowCharacter && (
                             <div
                                 className = 'not-allow-title-character-div'
@@ -280,7 +280,7 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                     </div>
                 </div>
 
-                <div className = 'welcome-cards-container'>
+                {/* <div className = 'welcome-cards-container'>
                     <div className = 'welcome-card-column'>
                         <div className = 'welcome-tabs welcome-card welcome-card--blue'>
                             {this._renderTabs()}
@@ -297,7 +297,7 @@ class WelcomePage extends AbstractWelcomePage<IProps> {
                             className = 'welcome-page-content'
                             ref = { this._setAdditionalContentRef } />
                         : null}
-                </div>
+                </div> */}
                 {/* {DISPLAY_WELCOME_FOOTER && this._renderFooter()} */}
             </div>
 
